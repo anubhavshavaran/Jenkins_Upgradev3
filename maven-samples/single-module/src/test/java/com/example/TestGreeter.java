@@ -21,7 +21,6 @@ public class TestGreeter {
   }
 
   @Test
-  @Test
   public void greetShouldIncludeTheOneBeingGreeted() {
     String someone = "World";
 
