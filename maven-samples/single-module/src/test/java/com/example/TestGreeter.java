@@ -21,12 +21,12 @@ public class TestGreeter {
   }
 
   @Test
-  public void intentionallyFailed() {
+  @Test
+  public void greetShouldIncludeTheOneBeingGreeted() {
     String someone = "World";
 
-    assertTrue(false);
+    assertThat(greeter.greet(someone), containsString(someone));
   }
-  
 
   @Test
   public void greetShouldIncludeGreetingPhrase() {
